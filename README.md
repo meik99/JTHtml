@@ -39,7 +39,7 @@ This is a div too.
 $ref: this.willBeA.link Link-Text
 ```
 
-###Sample.txt.html
+###Sample.txt.html::
 |\<html>
 |	\<head>
 |		\<meta charset='utf-8'/>
