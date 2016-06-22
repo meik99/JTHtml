@@ -39,8 +39,8 @@ This is a div too.
 $ref: this.willBeA.link Link-Text
 ```
 
-###Sample.txt.html::
-|\<html>
+###Sample.txt.html
+<html>
 |	\<head>
 |		\<meta charset='utf-8'/>
 |	\</head>
@@ -56,7 +56,7 @@ $ref: this.willBeA.link Link-Text
 |		\<code> System.out.println("This will be inside a \<code> tag") \</code>
 |		\<a href='this.willBeA.link'> Link-Text \</a>
 |	\</body>
-|\</html>
+</html>
 
 ##Rules and important stuff
 1. After a key there has to be a whitespace, tab or newline.
