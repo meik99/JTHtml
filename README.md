@@ -40,24 +40,24 @@ $ref: this.willBeA.link Link-Text
 ```
 
 ###Sample.txt.html
+```
 <html>
-|	\<head>
-|		\<meta charset='utf-8'/>
-|	\</head>
-|
-|	\<body>
-|		\<h1> This is a header (h1) \<h1>
-|		\<h2> This is a samller header (h2) \<h2>
-|		\<p> This is a paragraph (p). \</p>
-|		\<div> This is a div. \</div>
-|       \<div>
-|			This is a div too.
-|		\</div>
-|		\<code> System.out.println("This will be inside a \<code> tag") \</code>
-|		\<a href='this.willBeA.link'> Link-Text \</a>
-|	\</body>
+	<head>
+		<meta charset='utf-8'/>
+	</head>
+	<body>
+		<h1> This is a header (h1) \<h1>
+		<h2> This is a samller header (h2) \<h2>
+		<p> This is a paragraph (p). \</p>
+		<div> This is a div. \</div>
+		<div>
+			This is a div too.
+		</div>
+		<code> System.out.println("This will be inside a \<code> tag") \</code>
+		<a href='this.willBeA.link'> Link-Text \</a>
+	</body>
 </html>
-
+```
 ##Rules and important stuff
 1. After a key there has to be a whitespace, tab or newline.
 2. Newlines, tabs and whitespaces will be too converted to html-equivalents.
