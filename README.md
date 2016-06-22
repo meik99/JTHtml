@@ -28,14 +28,14 @@ java -jar JTHtml.jar "source.txt"
 
 ###Sample.txt
 ```
-\#\#\# This is a header (h1) \#\#\#
+### This is a header (h1) ###
 ,,, This is a smaller header (h2) ,,,
-\*\*\* This is a paragraph (p). \*\*\*
-\-\-\- This is a div. \-\-\-
-\-\-\-
+*** This is a paragraph (p). ***
+--- This is a div. ---
+---
 This is a div too.
-\-\-\-
-+++ System.out.println("This will be inside a \<code> tag") +++
+---
++++ System.out.println("This will be inside a <code> tag") +++
 $ref: this.willBeA.link Link-Text
 ```
 
