@@ -29,6 +29,6 @@ java -jar JTHtml.jar "source.txt"
 |--------|-----|
 | +++ | code |
 |-----|------|
-| $ref "link" "text" | <a href='link'>text</a> |
+| $ref "link" "text" | \<a href='link'>text</a> |
 |--------------------|-------------------------|
 
