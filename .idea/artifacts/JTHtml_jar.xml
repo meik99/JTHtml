@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="JTHtml:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JTHtml_jar</output-path>
+    <root id="archive" name="JTHtml.jar">
+      <element id="module-output" name="textToHtml" />
+    </root>
+  </artifact>
+</component>
