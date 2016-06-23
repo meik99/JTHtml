@@ -63,5 +63,6 @@ $ref: this.willBeA.link Link-Text
 2. Newlines, tabs and whitespaces will be too converted to html-equivalents.
    (Fix in the future)
 3. Encapsulating tags is not possible at the moment. (No ",,, +++ +++ ,,," -> will not work)
+   Although you can use the link-key inside tags.
 4. This project isn't perfect but i will fix and stuff in the near future.
 
