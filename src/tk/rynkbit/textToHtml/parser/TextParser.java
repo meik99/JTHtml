@@ -30,6 +30,10 @@ public class TextParser {
         List<Token> tokenList = lexer.getOutput();
         Token lastSpecialToken = null;
 
+        output.append("<div class='row'>");
+        output.append("<div class='col-md-12'>");
+        output.append("<div class='container'>");
+
         for(int i = 0; i < tokenList.size(); i++){
 
             Token token = tokenList.get(i);
@@ -54,14 +58,33 @@ public class TextParser {
                 if(lastSpecialToken != null){
                     output.append("</");
                     output.append(getSpecialContent(lastSpecialToken));
+                    output.append(">");
+                    output.append("</div>");
+
+                    if(lastSpecialToken.getType() == Token.Type.CODE){
+                        output.append("</div>");
+                    }
+
                     lastSpecialToken = null;
                 }
                 else {
                     lastSpecialToken = token;
-                    output.append("<");
-                    output.append(getSpecialContent(lastSpecialToken));
+                    output.append("<div class='panel panel-default'>");
+
+                    if(lastSpecialToken.getType() != Token.Type.CODE) {
+                        output.append("<");
+                        output.append(getSpecialContent(lastSpecialToken));
+                        output.append(" class='panel-body'");
+                        output.append(">");
+                    }
+                    else{
+                        output.append("<div class='panel-body'>");
+                        output.append("<");
+                        output.append(getSpecialContent(lastSpecialToken));
+                        output.append(">");
+                    }
+
                 }
-                output.append(">");
             }
             else{
                 output.append(token.getToken());
@@ -69,6 +92,9 @@ public class TextParser {
             }
         }
 
+        output.append("</div>");
+        output.append("</div>");
+        output.append("</div>");
         this.output = output.toString();
     }
 

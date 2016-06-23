@@ -4,6 +4,7 @@ import tk.rynkbit.textToHtml.parser.TextLexer;
 import tk.rynkbit.textToHtml.parser.TextParser;
 import tk.rynkbit.textToHtml.parser.TextScanner;
 import tk.rynkbit.textToHtml.parser.tree.Token;
+import tk.rynkbit.textToHtml.template.HtmlTemplates;
 
 import java.io.*;
 
@@ -66,7 +67,9 @@ public class Main {
         try(BufferedWriter writer = new BufferedWriter(
                 new FileWriter(outFile)
         )) {
-            writer.write("<html><head><meta charset='UTF-8'/></head><body>");
+            writer.write("<html>" +
+                    HtmlTemplates.HEADER
+                    + "<body>");
             writer.write(parser.getOutput());
             writer.write("</body></html>");
             writer.flush();
