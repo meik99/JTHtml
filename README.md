@@ -69,3 +69,9 @@ $ref: this.willBeA.link Link-Text
    
 4 This project isn't perfect but i will fix and do stuff in the near future.
 
+##To-Do
+1. Implement escape sequences so one can use keys inside normal text
+2. Implement more Keys for more Html
+3. Implement CSS-Frameworks like Bootstrap or MDL without creating spaghetti-code
+    or destroying everything
+
