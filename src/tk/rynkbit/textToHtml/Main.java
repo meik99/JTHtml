@@ -67,11 +67,7 @@ public class Main {
         try(BufferedWriter writer = new BufferedWriter(
                 new FileWriter(outFile)
         )) {
-            writer.write("<html>" +
-                    HtmlTemplates.HEADER
-                    + "<body>");
             writer.write(parser.getOutput());
-            writer.write("</body></html>");
             writer.flush();
         } catch (IOException e) {
             System.exit(EXIT_CODE++);

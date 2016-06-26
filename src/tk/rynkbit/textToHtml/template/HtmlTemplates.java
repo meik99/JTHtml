@@ -13,5 +13,6 @@ public class HtmlTemplates {
             "integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44='   " +
             "crossorigin='anonymous'></script>";
     public static final String CHARSET = "<meta charset='UTF-8'/>";
-    public static final String HEADER = "<head>" + CHARSET + STYLE + JQUERY + BOOTSTRAP  + "</head>";
+    public static final String HEADER = "<html><head>" + CHARSET + STYLE + JQUERY + BOOTSTRAP  + "</head>";
+    public static final String END = "</body></html>";
 }

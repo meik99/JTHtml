@@ -42,6 +42,12 @@ public class TextScanner {
         return this.currentChar;
     }
 
+    public String getPrevious(){
+        if(currentIndex > 0)
+            currentIndex-=2;
+        return this.getNext();
+    }
+
     public boolean hasNext(){
         return this.source.length() > this.currentIndex+1;
     }
