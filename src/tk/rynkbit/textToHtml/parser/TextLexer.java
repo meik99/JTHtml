@@ -1,6 +1,7 @@
 package tk.rynkbit.textToHtml.parser;
 
-import tk.rynkbit.textToHtml.parser.tree.Token;
+import tk.rynkbit.textToHtml.parser.data.TextConstants;
+import tk.rynkbit.textToHtml.parser.model.Token;
 
 import java.util.*;
 
@@ -34,6 +35,7 @@ public class TextLexer {
 
         tokenKeys.put(TextConstants.WHITESPACE, Token.Type.WHITESPACE);
         tokenKeys.put(TextConstants.NEWLINE, Token.Type.NEW_LINE);
+        tokenKeys.put("\n", Token.Type.NEW_LINE);
         tokenKeys.put(TextConstants.TAB, Token.Type.TAB);
         tokenKeys.put(TextConstants.WHITESPACE_TAB, Token.Type.TAB);
 

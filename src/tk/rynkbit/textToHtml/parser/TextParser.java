@@ -1,7 +1,7 @@
 package tk.rynkbit.textToHtml.parser;
 
-import tk.rynkbit.textToHtml.parser.tree.Token;
-import tk.rynkbit.textToHtml.template.HtmlTemplates;
+import tk.rynkbit.textToHtml.parser.model.Token;
+import tk.rynkbit.textToHtml.parser.data.HtmlTemplates;
 
 import java.util.List;
 import java.util.Stack;

@@ -1,4 +1,4 @@
-package tk.rynkbit.textToHtml.parser.tree;
+package tk.rynkbit.textToHtml.parser.model;
 
 /**
  * Created by michael on 22.06.16.

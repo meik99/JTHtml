@@ -3,8 +3,8 @@ package tk.rynkbit.textToHtml;
 import tk.rynkbit.textToHtml.parser.TextLexer;
 import tk.rynkbit.textToHtml.parser.TextParser;
 import tk.rynkbit.textToHtml.parser.TextScanner;
-import tk.rynkbit.textToHtml.parser.tree.Token;
-import tk.rynkbit.textToHtml.template.HtmlTemplates;
+import tk.rynkbit.textToHtml.parser.io.TextController;
+import tk.rynkbit.textToHtml.parser.model.Token;
 
 import java.io.*;
 
@@ -18,7 +18,9 @@ public class Main {
         if(args.length < 1)
             System.exit(EXIT_CODE++);
 
-        File inFile = null;
+        TextController.processFile(args[0]);
+
+        /*File inFile = null;
         File outFile = null;
         boolean createSuccessfull;
         StringBuilder sourceText = new StringBuilder();
@@ -71,6 +73,6 @@ public class Main {
             writer.flush();
         } catch (IOException e) {
             System.exit(EXIT_CODE++);
-        }
+        }*/
     }
 }
